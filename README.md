@@ -1,2 +1,1 @@
-# jimazeyu.github.io
-Personal homepage
+Homepage of Mazeyu Ji.
