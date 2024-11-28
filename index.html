@@ -53,6 +53,40 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             
 
+            <tr onmouseout=wildlma_stop() onmouseover=wildlma_start()>
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div id='wildlma_anim' class='hidden'>
+                  <img src="images/papers/wildlma.avifs" style="width:192px;height:108px;">
+                </div>
+                <div id='wildlma_still'>
+                  <img src="images/papers/wildlma.jpg" style="width:192px;height:108px;">
+                </div>
+                <script type="text/javascript">
+                  function wildlma_start() {
+                    document.getElementById('wildlma_anim').style.display = 'inline';
+                    document.getElementById('wildlma_still').style.display = 'none';
+                  }
+
+                  function wildlma_stop() {
+                    document.getElementById('wildlma_anim').style.display = 'none';
+                    document.getElementById('wildlma_still').style.display = 'inline';
+                  }
+                  wildlma_stop()
+                </script>
+              </td>
+              <td width="75%" valign="middle">
+                <span class="papertitle">WildLMA: Long Horizon Loco-MAnipulation in the Wild</span>
+                <br>
+                Ri-Zhao Qiu*,Yuchen Song*, Xuanbin Peng*, Sai Aneesh Suryadevara, Ge Yang, Minghuan Liu, <strong>Mazeyu Ji</strong>, Chengzhe Jia, Ruihan Yang, Xueyan Zou, Xiaolong Wang
+                <br>
+                <em>CoRL</em>, 2024
+                <br>
+                <a href="https://wildlma.github.io/">project website</a> /
+                <a href="https://arxiv.org/abs/2411.15131">paper</a>
+              </td>
+            </tr>
+  
+
             <tr>
               <td style="padding:20px;width:25%;vertical-align:middle">
               <div id='LMM_3DP_still'></div>
