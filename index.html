@@ -53,6 +53,41 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             
 
+            <tr onmouseout=pmp_stop() onmouseover=pmp_start()>
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div id='pmp_anim' class='hidden'>
+                  <img src="images/papers/pmp.gif" style="width:192px;height:108px;">
+                </div>
+                <div id='pmp_still'>
+                  <img src="images/papers/pmp.jpg" style="width:192px;height:108px;">
+                </div>
+                <script type="text/javascript">
+                  function pmp_start() {
+                    document.getElementById('pmp_anim').style.display = 'inline';
+                    document.getElementById('pmp_still').style.display = 'none';
+                  }
+
+                  function pmp_stop() {
+                    document.getElementById('pmp_anim').style.display = 'none';
+                    document.getElementById('pmp_still').style.display = 'inline';
+                  }
+                  pmp_stop()
+                </script>
+              </td>
+              <td width="75%" valign="middle">
+                <span class="papertitle">Mobile-TeleVision&#58 Predictive Motion Priors for Humanoid Whole-Body Control</span>
+                <br>
+                Chenhao Lu*, Xuxin Cheng*, Jialong Li*, Shiqi Yang, <strong>Mazeyu Ji</strong>, Chengjing Yuan, Ge Yang, Sha Yi, Xiaolong Wang
+                <br>
+                <em>in submission to ICRA</em>, 2025
+                <br>
+                <a href="https://mobile-tv.github.io">project website</a> /
+                <a href="https://arxiv.org/abs/2412.07773">paper</a> /
+                <a href="https://github.com/OpenTeleVision/TeleVision">Code</a> /
+                <a href="https://youtu.be/A_dYM5mzJ5c">Video</a>
+              </td>
+            </tr>
+
             <tr onmouseout=wildlma_stop() onmouseover=wildlma_start()>
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div id='wildlma_anim' class='hidden'>
@@ -85,7 +120,6 @@
                 <a href="https://arxiv.org/abs/2411.15131">paper</a>
               </td>
             </tr>
-  
 
             <tr>
               <td style="padding:20px;width:25%;vertical-align:middle">
