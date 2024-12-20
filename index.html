@@ -53,6 +53,74 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             
 
+            <tr onmouseout="exbody2_stop()" onmouseover="exbody2_start()" bgcolor="#ffffd0">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div id='exbody2_anim' class='hidden'>
+                  <video src="images/papers/exbody2.mp4" style="width:192px;height:108px;" autoplay muted loop></video>
+                </div>
+                <div id='exbody2_still'>
+                  <img src="images/papers/exbody2.jpg" style="width:192px;height:108px;">
+                </div>
+                <script type="text/javascript">
+                  function exbody2_start() {
+                    document.getElementById('exbody2_anim').style.display = 'inline';
+                    document.getElementById('exbody2_still').style.display = 'none';
+                  }
+            
+                  function exbody2_stop() {
+                    document.getElementById('exbody2_anim').style.display = 'none';
+                    document.getElementById('exbody2_still').style.display = 'inline';
+                  }
+                  exbody2_stop()
+                </script>
+              </td>
+              <td width="75%" valign="middle">
+                <span class="papertitle">Exbody2: Advanced Expressive Humanoid Whole-Body Control</span>
+                <br>
+                <strong>Mazeyu Ji*</strong>, Xuanbin Peng*, Fangchen Liu, Jialong Li, Ge Yang, Xuxin Cheng, Xiaolong Wang
+                <br>
+                <em>in submission to CVPR</em>, 2025
+                <br>
+                <a href="https://exbody2.github.io/">project website</a> /
+                <a href="https://arxiv.org/abs/2412.13196">paper</a> /
+                <a href="https://youtu.be/sE4cEfhVOdE">video</a>
+              </td>
+            </tr>
+            
+            <tr onmouseout="grasp_splats_stop()" onmouseover="grasp_splats_start()" bgcolor="#ffffd0">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div id='grasp_splats_anim' class='hidden'>
+                  <img src="images/papers/grasp_splats_dynamic.gif" style="width:192px;height:108px;">
+                </div>
+                <div id='grasp_splats_still'>
+                  <img src="images/papers/grasp_splats_static.jpg" style="width:192px;height:108px;">
+                </div>
+                <script type="text/javascript">
+                  function grasp_splats_start() {
+                    document.getElementById('grasp_splats_anim').style.display = 'inline';
+                    document.getElementById('grasp_splats_still').style.display = 'none';
+                  }
+
+                  function grasp_splats_stop() {
+                    document.getElementById('grasp_splats_anim').style.display = 'none';
+                    document.getElementById('grasp_splats_still').style.display = 'inline';
+                  }
+                  grasp_splats_stop()
+                </script>
+              </td>
+              <td width="75%" valign="middle">
+                <span class="papertitle">GraspSplats: Efficient Manipulation with 3D Feature Splatting</span>
+                <br>
+                <strong>Mazeyu Ji*</strong>, Ri-zhao Qiu*, Xueyan Zou, Xiaolong Wang
+                <br>
+                <em>CoRL</em>, 2024
+                <br>
+                <a href="https://graspsplats.github.io">project website</a> /
+                <a href="https://arxiv.org/pdf/2409.02084">paper</a> /
+                <a href="https://github.com/jimazeyu/GraspSplats">code</a>
+              </td>
+            </tr>
+
             <tr onmouseout=pmp_stop() onmouseover=pmp_start()>
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div id='pmp_anim' class='hidden'>
@@ -135,40 +203,6 @@
               <em>in submission to ICRA</em>, 2025
               <br>
               <a href="https://lmm-3dp-release.github.io">project page</a>
-              </td>
-            </tr>
-
-            <tr onmouseout="grasp_splats_stop()" onmouseover="grasp_splats_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <div id='grasp_splats_anim' class='hidden'>
-                  <img src="images/papers/grasp_splats_dynamic.gif" style="width:192px;height:108px;">
-                </div>
-                <div id='grasp_splats_still'>
-                  <img src="images/papers/grasp_splats_static.jpg" style="width:192px;height:108px;">
-                </div>
-                <script type="text/javascript">
-                  function grasp_splats_start() {
-                    document.getElementById('grasp_splats_anim').style.display = 'inline';
-                    document.getElementById('grasp_splats_still').style.display = 'none';
-                  }
-
-                  function grasp_splats_stop() {
-                    document.getElementById('grasp_splats_anim').style.display = 'none';
-                    document.getElementById('grasp_splats_still').style.display = 'inline';
-                  }
-                  grasp_splats_stop()
-                </script>
-              </td>
-              <td width="75%" valign="middle">
-                <span class="papertitle">GraspSplats: Efficient Manipulation with 3D Feature Splatting</span>
-                <br>
-                <strong>Mazeyu Ji*</strong>, Ri-zhao Qiu*, Xueyan Zou, Xiaolong Wang
-                <br>
-                <em>CoRL</em>, 2024
-                <br>
-                <a href="https://graspsplats.github.io">project website</a> /
-                <a href="https://arxiv.org/pdf/2409.02084">paper</a> /
-                <a href="https://github.com/jimazeyu/GraspSplats">code</a>
               </td>
             </tr>
             
