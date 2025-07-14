@@ -51,7 +51,40 @@
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            
+
+            <tr onmouseout="gmt_stop()" onmouseover="gmt_start()" bgcolor="#ffffd0">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div id='gmt_anim' class='hidden'>
+                  <img src="images/papers/gmt.gif" style="width:192px;height:108px;"></img>
+                </div>
+                <div id='gmt_still'>
+                  <img src="images/papers/gmt.png" style="width:192px;height:108px;">
+                </div>
+                <script type="text/javascript">
+                  function gmt_start() {
+                    document.getElementById('gmt_anim').style.display = 'inline';
+                    document.getElementById('gmt_still').style.display = 'none';
+                  }
+
+                  function gmt_stop() {
+                    document.getElementById('gmt_anim').style.display = 'none';
+                    document.getElementById('gmt_still').style.display = 'inline';
+                  }
+                  gmt_stop()
+                </script>
+              </td>
+              <td width="75%" valign="middle">
+                <span class="papertitle">GMT: General Motion Tracking for Humanoid Whole-Body Control</span>
+                <br>
+                Zixuan Chen*, <strong>Mazeyu Ji*</strong>, Xuxin Cheng, Xuanbin Peng, Xue Bin Peng†, Xiaolong Wang†
+                <br>
+                arXiv, 2025
+                <br>
+                <a href="https://gmt-humanoid.github.io/">project website</a> /
+                <a href="https://arxiv.org/abs/2506.14770">paper</a> /
+                <a href="https://www.youtube.com/watch?v=n6p0DzpYjDE">video</a>
+              </td>
+            </tr>
 
             <tr onmouseout="exbody2_stop()" onmouseover="exbody2_start()" bgcolor="#ffffd0">
               <td style="padding:20px;width:25%;vertical-align:middle">
@@ -79,7 +112,7 @@
                 <br>
                 <strong>Mazeyu Ji*</strong>, Xuanbin Peng*, Fangchen Liu, Jialong Li, Ge Yang, Xuxin Cheng, Xiaolong Wang
                 <br>
-                arXiv, 2024.
+                RSS WCBM Workshop, 2025 (Spotlight)
                 <br>
                 <a href="https://exbody2.github.io/">project website</a> /
                 <a href="https://arxiv.org/abs/2412.13196">paper</a> /
@@ -87,7 +120,7 @@
               </td>
             </tr>
             
-            <tr onmouseout="grasp_splats_stop()" onmouseover="grasp_splats_start()" bgcolor="#ffffd0">
+            <tr onmouseout="grasp_splats_stop()" onmouseover="grasp_splats_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div id='grasp_splats_anim' class='hidden'>
                   <img src="images/papers/grasp_splats_dynamic.gif" style="width:192px;height:108px;">
